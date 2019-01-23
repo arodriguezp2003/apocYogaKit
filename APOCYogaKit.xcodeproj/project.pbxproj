@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		352A220E21F8B54600180953 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352A220D21F8B54600180953 /* AppDelegate.swift */; };
-		352A221021F8B54600180953 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352A220F21F8B54600180953 /* ViewController.swift */; };
-		352A221321F8B54600180953 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 352A221121F8B54600180953 /* Main.storyboard */; };
+		352A221021F8B54600180953 /* initController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352A220F21F8B54600180953 /* initController.swift */; };
 		352A221521F8B54700180953 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 352A221421F8B54700180953 /* Assets.xcassets */; };
 		352A221821F8B54700180953 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 352A221621F8B54700180953 /* LaunchScreen.storyboard */; };
+		5E80BBE6C65161D5F2ADDE42 /* Pods_APOCYogaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40A058DC3FCCE4FC0C315AA2 /* Pods_APOCYogaKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		352A220A21F8B54600180953 /* APOCYogaKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APOCYogaKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		352A220D21F8B54600180953 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		352A220F21F8B54600180953 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		352A221221F8B54600180953 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		352A220F21F8B54600180953 /* initController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = initController.swift; sourceTree = "<group>"; };
 		352A221421F8B54700180953 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		352A221721F8B54700180953 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		352A221921F8B54700180953 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40A058DC3FCCE4FC0C315AA2 /* Pods_APOCYogaKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APOCYogaKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3D2BE7CD2CEDB9FADFEE94C /* Pods-APOCYogaKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APOCYogaKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-APOCYogaKit/Pods-APOCYogaKit.release.xcconfig"; sourceTree = "<group>"; };
+		EDC8DF3F46A6EC1611E66367 /* Pods-APOCYogaKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APOCYogaKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-APOCYogaKit/Pods-APOCYogaKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E80BBE6C65161D5F2ADDE42 /* Pods_APOCYogaKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,8 @@
 			children = (
 				352A220C21F8B54600180953 /* APOCYogaKit */,
 				352A220B21F8B54600180953 /* Products */,
+				930345F984BBE66C60976C41 /* Pods */,
+				8A539B166E6DBCBB1EA938C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +59,38 @@
 		352A220C21F8B54600180953 /* APOCYogaKit */ = {
 			isa = PBXGroup;
 			children = (
+				352A221F21F8B56C00180953 /* Views */,
 				352A220D21F8B54600180953 /* AppDelegate.swift */,
-				352A220F21F8B54600180953 /* ViewController.swift */,
-				352A221121F8B54600180953 /* Main.storyboard */,
 				352A221421F8B54700180953 /* Assets.xcassets */,
 				352A221621F8B54700180953 /* LaunchScreen.storyboard */,
 				352A221921F8B54700180953 /* Info.plist */,
 			);
 			path = APOCYogaKit;
+			sourceTree = "<group>";
+		};
+		352A221F21F8B56C00180953 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				352A220F21F8B54600180953 /* initController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8A539B166E6DBCBB1EA938C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40A058DC3FCCE4FC0C315AA2 /* Pods_APOCYogaKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		930345F984BBE66C60976C41 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EDC8DF3F46A6EC1611E66367 /* Pods-APOCYogaKit.debug.xcconfig */,
+				C3D2BE7CD2CEDB9FADFEE94C /* Pods-APOCYogaKit.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +100,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 352A221C21F8B54700180953 /* Build configuration list for PBXNativeTarget "APOCYogaKit" */;
 			buildPhases = (
+				4B5A96E1EE519E9DB7F42B80 /* [CP] Check Pods Manifest.lock */,
 				352A220621F8B54600180953 /* Sources */,
 				352A220721F8B54600180953 /* Frameworks */,
 				352A220821F8B54600180953 /* Resources */,
+				2BD5F7EE68160C3B3CEC451F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,18 +155,66 @@
 			files = (
 				352A221821F8B54700180953 /* LaunchScreen.storyboard in Resources */,
 				352A221521F8B54700180953 /* Assets.xcassets in Resources */,
-				352A221321F8B54600180953 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2BD5F7EE68160C3B3CEC451F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-APOCYogaKit/Pods-APOCYogaKit-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Yoga/yoga.framework",
+				"${BUILT_PRODUCTS_DIR}/YogaKit/YogaKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/yoga.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YogaKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-APOCYogaKit/Pods-APOCYogaKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B5A96E1EE519E9DB7F42B80 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-APOCYogaKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		352A220621F8B54600180953 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				352A221021F8B54600180953 /* ViewController.swift in Sources */,
+				352A221021F8B54600180953 /* initController.swift in Sources */,
 				352A220E21F8B54600180953 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,14 +222,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		352A221121F8B54600180953 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				352A221221F8B54600180953 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		352A221621F8B54700180953 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -280,6 +351,7 @@
 		};
 		352A221D21F8B54700180953 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDC8DF3F46A6EC1611E66367 /* Pods-APOCYogaKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +370,7 @@
 		};
 		352A221E21F8B54700180953 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3D2BE7CD2CEDB9FADFEE94C /* Pods-APOCYogaKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
