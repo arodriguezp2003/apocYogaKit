@@ -10,8 +10,7 @@ import UIKit
 import YogaKit
 
 extension InitController {
-    
-    
+        
      func setupView() {
         self.view.configureLayout { l in
             l.isEnabled = true

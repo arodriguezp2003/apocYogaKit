@@ -79,6 +79,7 @@ class InitController: UIViewController {
         super.viewDidLoad()
         setupView()
         setupHD()
+
     }
     
     private func setupHD() {
