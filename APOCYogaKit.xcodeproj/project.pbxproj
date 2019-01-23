@@ -11,6 +11,8 @@
 		352A221021F8B54600180953 /* initController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352A220F21F8B54600180953 /* initController.swift */; };
 		352A221521F8B54700180953 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 352A221421F8B54700180953 /* Assets.xcassets */; };
 		352A221821F8B54700180953 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 352A221621F8B54700180953 /* LaunchScreen.storyboard */; };
+		352A222121F8BB1400180953 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352A222021F8BB1400180953 /* Extensions.swift */; };
+		35FFEA0B21F8D95E00505EED /* InitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FFEA0A21F8D95E00505EED /* InitView.swift */; };
 		5E80BBE6C65161D5F2ADDE42 /* Pods_APOCYogaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40A058DC3FCCE4FC0C315AA2 /* Pods_APOCYogaKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,6 +23,8 @@
 		352A221421F8B54700180953 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		352A221721F8B54700180953 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		352A221921F8B54700180953 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		352A222021F8BB1400180953 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		35FFEA0A21F8D95E00505EED /* InitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitView.swift; sourceTree = "<group>"; };
 		40A058DC3FCCE4FC0C315AA2 /* Pods_APOCYogaKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APOCYogaKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3D2BE7CD2CEDB9FADFEE94C /* Pods-APOCYogaKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APOCYogaKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-APOCYogaKit/Pods-APOCYogaKit.release.xcconfig"; sourceTree = "<group>"; };
 		EDC8DF3F46A6EC1611E66367 /* Pods-APOCYogaKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APOCYogaKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-APOCYogaKit/Pods-APOCYogaKit.debug.xcconfig"; sourceTree = "<group>"; };
@@ -59,19 +63,29 @@
 		352A220C21F8B54600180953 /* APOCYogaKit */ = {
 			isa = PBXGroup;
 			children = (
-				352A221F21F8B56C00180953 /* Views */,
+				35FFEA0921F8D94E00505EED /* Views */,
+				352A221F21F8B56C00180953 /* Controllers */,
 				352A220D21F8B54600180953 /* AppDelegate.swift */,
 				352A221421F8B54700180953 /* Assets.xcassets */,
 				352A221621F8B54700180953 /* LaunchScreen.storyboard */,
 				352A221921F8B54700180953 /* Info.plist */,
+				352A222021F8BB1400180953 /* Extensions.swift */,
 			);
 			path = APOCYogaKit;
 			sourceTree = "<group>";
 		};
-		352A221F21F8B56C00180953 /* Views */ = {
+		352A221F21F8B56C00180953 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				352A220F21F8B54600180953 /* initController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		35FFEA0921F8D94E00505EED /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				35FFEA0A21F8D95E00505EED /* InitView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -214,7 +228,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35FFEA0B21F8D95E00505EED /* InitView.swift in Sources */,
 				352A221021F8B54600180953 /* initController.swift in Sources */,
+				352A222121F8BB1400180953 /* Extensions.swift in Sources */,
 				352A220E21F8B54600180953 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,7 +380,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yokit.APOCYogaKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -383,7 +399,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yokit.APOCYogaKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
