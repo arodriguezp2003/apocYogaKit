@@ -14,24 +14,29 @@ class InitController: UIViewController {
     var titleHeaderLabel: UILabel = {
         let label = UILabel()
         label.text = "Tarjeta de Crédito"
+        label.font = UIFont(name: "PFBeauSansPro-Regular", size: 18)
         label.textAlignment = .center
-        label.textColor = .white
+        label.textColor = UIColor.defaultTheme.primaryText
         return label
     }()
     
     var usedLabel: UILabel = {
         let label = UILabel()
         label.text = "$130.000"
+        let font = UIFont(name: "MyriadPro-Semibold", size: 18)!
+        label.font =  UIFont(name: font.fontName, size: font.pointSize.dp)
         label.textAlignment = .center
-        label.textColor = .white
+        label.textColor = UIColor.defaultTheme.primaryText
         return label
     }()
     
     var availableLabel: UILabel = {
         let label = UILabel()
         label.text = "$670.000"
+        let font = UIFont(name: "MyriadPro-Semibold", size: 18)!
+        label.font =  UIFont(name: font.fontName, size: font.pointSize.dp)
         label.textAlignment = .center
-        label.textColor = .white
+        label.textColor = UIColor.defaultTheme.primaryText
         return label
     }()
     
@@ -39,8 +44,8 @@ class InitController: UIViewController {
         let button = UIButton()
         button.tag = 1000
         button.setTitle("Últimos movimientos", for: .normal)
-        button.titleLabel?.textColor = .red
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 13)
+        button.setTitleColor(UIColor.defaultTheme.active, for: .normal)
+        button.titleLabel?.font =  UIFont(name: "PFBeauSansPro-Regular", size: 14)
     
         return button
     }()
@@ -49,14 +54,14 @@ class InitController: UIViewController {
         let button = UIButton()
         button.tag = 1001
         button.setTitle("Movimientos Facturados", for: .normal)
-        button.titleLabel?.textColor = .green
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 13)
+        button.setTitleColor(UIColor.defaultTheme.df, for: .normal)
+        button.titleLabel?.font = UIFont(name: "PFBeauSansPro-Regular", size: 14)
         return button
     }()
     
     var selectorActualLineView:UIView = {
         let view = UIView()
-        view.backgroundColor = .green
+        view.backgroundColor = UIColor.defaultTheme.active
         return view
     }()
     
@@ -69,7 +74,7 @@ class InitController: UIViewController {
             flowlayout.scrollDirection = .horizontal
         }
         c.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
-        c.backgroundColor = .black
+        c.backgroundColor = .white
         c.isPagingEnabled = true
         return c
     }()
@@ -105,9 +110,9 @@ extension InitController:UICollectionViewDataSource, UICollectionViewDelegate,  
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
         if indexPath.item == 0 {
-            cell.backgroundColor = .red
+            cell.backgroundColor = UIColor.defaultTheme.df
         } else {
-             cell.backgroundColor = .yellow
+             cell.backgroundColor = UIColor.white
         }
         return cell
     }
@@ -122,9 +127,7 @@ extension InitController:UICollectionViewDataSource, UICollectionViewDelegate,  
         let index = targetContentOffset.pointee.x  / view.frame.width
         print(index)
         setMov(Int(index))
-        
     }
-    
     
     private func setMov(_ index: Int) {
         let indexPath = IndexPath(item: index, section: 0)
@@ -138,7 +141,15 @@ extension InitController:UICollectionViewDataSource, UICollectionViewDelegate,  
         }
         
         UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseOut, animations: {
-            self.selectorActualLineView.frame = CGRect(x: x,y: 0, width: Int(w), height: 2)
+            if index == 0 {
+                self.selectorLastMov.setTitleColor(UIColor.defaultTheme.active, for: .normal)
+                self.selectorBillingMov.setTitleColor(UIColor.defaultTheme.df, for: .normal)
+            } else {
+                self.selectorLastMov.setTitleColor(UIColor.defaultTheme.df, for: .normal)
+                self.selectorBillingMov.setTitleColor(UIColor.defaultTheme.active, for: .normal)
+            }
+            
+            self.selectorActualLineView.frame = CGRect(x: x,y: 0, width: Int(w), height: 3)
         })
     }
 

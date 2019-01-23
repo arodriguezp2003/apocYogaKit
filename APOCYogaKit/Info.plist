@@ -2,6 +2,24 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>PFBeauSansPro-Book.ttf</string>
+		<string>pfbeausansprothin_webfont.ttf</string>
+		<string>pfbeausanspro_semibold-webfont.ttf</string>
+		<string>pfbeausansprobold-webfont.ttf</string>
+		<string>pfbeausansprolight-webfont.ttf</string>
+		<string>pfbeausansproreg-webfont.ttf</string>
+		<string>omni-ExtraThin.ttf</string>
+		<string>pfbeausanspro_bold_webfont.ttf</string>
+		<string>pfbeausanspro_light_webfont.ttf</string>
+		<string>pfbeausanspro_regular_webfont.ttf</string>
+		<string>pfbeausanspro_semibold_webfont.ttf</string>
+		<string>pfbeausanspro_thin_webfont.ttf</string>
+		<string>MyriadProSemibold.ttf</string>
+	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

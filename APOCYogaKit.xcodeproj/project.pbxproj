@@ -13,6 +13,14 @@
 		352A221821F8B54700180953 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 352A221621F8B54700180953 /* LaunchScreen.storyboard */; };
 		352A222121F8BB1400180953 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352A222021F8BB1400180953 /* Extensions.swift */; };
 		35FFEA0B21F8D95E00505EED /* InitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FFEA0A21F8D95E00505EED /* InitView.swift */; };
+		35FFEA1721F8FEFB00505EED /* PFBeauSansPro-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35FFEA0F21F8FEFA00505EED /* PFBeauSansPro-Book.ttf */; };
+		35FFEA1821F8FEFB00505EED /* pfbeausansprolight-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35FFEA1021F8FEFA00505EED /* pfbeausansprolight-webfont.ttf */; };
+		35FFEA1921F8FEFB00505EED /* pfbeausanspro_semibold-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35FFEA1121F8FEFA00505EED /* pfbeausanspro_semibold-webfont.ttf */; };
+		35FFEA1A21F8FEFB00505EED /* pfbeausansprothin_webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35FFEA1221F8FEFA00505EED /* pfbeausansprothin_webfont.ttf */; };
+		35FFEA1B21F8FEFB00505EED /* pfbeausansprobold-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35FFEA1321F8FEFB00505EED /* pfbeausansprobold-webfont.ttf */; };
+		35FFEA1C21F8FEFB00505EED /* MyriadProSemibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35FFEA1421F8FEFB00505EED /* MyriadProSemibold.ttf */; };
+		35FFEA1D21F8FEFB00505EED /* pfbeausansproreg-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35FFEA1521F8FEFB00505EED /* pfbeausansproreg-webfont.ttf */; };
+		35FFEA1E21F8FEFB00505EED /* omni-ExtraThin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 35FFEA1621F8FEFB00505EED /* omni-ExtraThin.otf */; };
 		5E80BBE6C65161D5F2ADDE42 /* Pods_APOCYogaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40A058DC3FCCE4FC0C315AA2 /* Pods_APOCYogaKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +33,14 @@
 		352A221921F8B54700180953 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		352A222021F8BB1400180953 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		35FFEA0A21F8D95E00505EED /* InitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitView.swift; sourceTree = "<group>"; };
+		35FFEA0F21F8FEFA00505EED /* PFBeauSansPro-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PFBeauSansPro-Book.ttf"; sourceTree = "<group>"; };
+		35FFEA1021F8FEFA00505EED /* pfbeausansprolight-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pfbeausansprolight-webfont.ttf"; sourceTree = "<group>"; };
+		35FFEA1121F8FEFA00505EED /* pfbeausanspro_semibold-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pfbeausanspro_semibold-webfont.ttf"; sourceTree = "<group>"; };
+		35FFEA1221F8FEFA00505EED /* pfbeausansprothin_webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pfbeausansprothin_webfont.ttf; sourceTree = "<group>"; };
+		35FFEA1321F8FEFB00505EED /* pfbeausansprobold-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pfbeausansprobold-webfont.ttf"; sourceTree = "<group>"; };
+		35FFEA1421F8FEFB00505EED /* MyriadProSemibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MyriadProSemibold.ttf; sourceTree = "<group>"; };
+		35FFEA1521F8FEFB00505EED /* pfbeausansproreg-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pfbeausansproreg-webfont.ttf"; sourceTree = "<group>"; };
+		35FFEA1621F8FEFB00505EED /* omni-ExtraThin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "omni-ExtraThin.otf"; sourceTree = "<group>"; };
 		40A058DC3FCCE4FC0C315AA2 /* Pods_APOCYogaKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APOCYogaKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3D2BE7CD2CEDB9FADFEE94C /* Pods-APOCYogaKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APOCYogaKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-APOCYogaKit/Pods-APOCYogaKit.release.xcconfig"; sourceTree = "<group>"; };
 		EDC8DF3F46A6EC1611E66367 /* Pods-APOCYogaKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APOCYogaKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-APOCYogaKit/Pods-APOCYogaKit.debug.xcconfig"; sourceTree = "<group>"; };
@@ -63,6 +79,7 @@
 		352A220C21F8B54600180953 /* APOCYogaKit */ = {
 			isa = PBXGroup;
 			children = (
+				35FFEA0D21F8FED900505EED /* Resources */,
 				35FFEA0921F8D94E00505EED /* Views */,
 				352A221F21F8B56C00180953 /* Controllers */,
 				352A220D21F8B54600180953 /* AppDelegate.swift */,
@@ -88,6 +105,29 @@
 				35FFEA0A21F8D95E00505EED /* InitView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		35FFEA0D21F8FED900505EED /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				35FFEA0E21F8FEEC00505EED /* fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		35FFEA0E21F8FEEC00505EED /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				35FFEA1421F8FEFB00505EED /* MyriadProSemibold.ttf */,
+				35FFEA1621F8FEFB00505EED /* omni-ExtraThin.otf */,
+				35FFEA1121F8FEFA00505EED /* pfbeausanspro_semibold-webfont.ttf */,
+				35FFEA0F21F8FEFA00505EED /* PFBeauSansPro-Book.ttf */,
+				35FFEA1321F8FEFB00505EED /* pfbeausansprobold-webfont.ttf */,
+				35FFEA1021F8FEFA00505EED /* pfbeausansprolight-webfont.ttf */,
+				35FFEA1521F8FEFB00505EED /* pfbeausansproreg-webfont.ttf */,
+				35FFEA1221F8FEFA00505EED /* pfbeausansprothin_webfont.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 		8A539B166E6DBCBB1EA938C5 /* Frameworks */ = {
@@ -167,8 +207,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35FFEA1921F8FEFB00505EED /* pfbeausanspro_semibold-webfont.ttf in Resources */,
+				35FFEA1D21F8FEFB00505EED /* pfbeausansproreg-webfont.ttf in Resources */,
+				35FFEA1721F8FEFB00505EED /* PFBeauSansPro-Book.ttf in Resources */,
+				35FFEA1821F8FEFB00505EED /* pfbeausansprolight-webfont.ttf in Resources */,
+				35FFEA1E21F8FEFB00505EED /* omni-ExtraThin.otf in Resources */,
+				35FFEA1B21F8FEFB00505EED /* pfbeausansprobold-webfont.ttf in Resources */,
 				352A221821F8B54700180953 /* LaunchScreen.storyboard in Resources */,
 				352A221521F8B54700180953 /* Assets.xcassets in Resources */,
+				35FFEA1A21F8FEFB00505EED /* pfbeausansprothin_webfont.ttf in Resources */,
+				35FFEA1C21F8FEFB00505EED /* MyriadProSemibold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +421,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3A5G9YMCL5;
 				INFOPLIST_FILE = APOCYogaKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -392,6 +441,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3A5G9YMCL5;
 				INFOPLIST_FILE = APOCYogaKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

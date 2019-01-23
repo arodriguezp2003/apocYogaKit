@@ -10,7 +10,7 @@ import UIKit
 import YogaKit
 
 extension InitController {
-        
+    
      func setupView() {
         self.view.configureLayout { l in
             l.isEnabled = true
@@ -31,7 +31,7 @@ extension InitController {
         }
         
         let headerView = UIView()
-        headerView.backgroundColor = .red
+        headerView.backgroundColor = UIColor.defaultTheme.primary
         headerView.configureLayout { (l) in
             l.isEnabled = true
             l.flexDirection = .row
@@ -40,8 +40,8 @@ extension InitController {
             l.width = YGValue(self.view.frame.width)
         }
         
-        let leftHeader = UIView()
-        leftHeader.backgroundColor = .white
+        let leftHeader = UIImageView()
+        leftHeader.image = UIImage(named: "icnVolver")
         leftHeader.configureLayout { (l) in
             l.isEnabled = true
             l.width = 30
@@ -52,7 +52,6 @@ extension InitController {
         }
         
         let rightHeader = UIView()
-        rightHeader.backgroundColor = .white
         rightHeader.configureLayout { (l) in
             l.isEnabled = true
             l.width = 30
@@ -77,7 +76,7 @@ extension InitController {
     
     private func setupAccountInfoView() {
         let accountInfoView = UIView()
-        accountInfoView.backgroundColor = .brown
+        accountInfoView.backgroundColor = UIColor.defaultTheme.primary
         // si es iphone 5 = 150, en el caso de cualquier otro sacamnos la proporción para mantener la vista del diseño
         var heigth:Float = 150.0
         if !Util.shared.isIphone5s() {
@@ -93,7 +92,6 @@ extension InitController {
         }
         
         let accountInfoDetailView = UIView()
-        accountInfoDetailView.backgroundColor = .yellow
         accountInfoDetailView.configureLayout {l in
             l.isEnabled = true
             l.height = 74
@@ -104,7 +102,6 @@ extension InitController {
         
         
         let detailLeft = UIView()
-        detailLeft.backgroundColor = .red
         detailLeft.configureLayout {l in
             l.isEnabled = true
             l.flexGrow = 1
@@ -119,6 +116,7 @@ extension InitController {
         
         let usedTextLabel = UILabel()
         usedTextLabel.text = "Utilizado"
+        usedTextLabel.font = UIFont(name: "PFBeauSansPro-Regular", size: 14)
         usedTextLabel.textColor = .white
         usedTextLabel.textAlignment = .center
         usedTextLabel.font = UIFont.systemFont(ofSize: 12)
@@ -128,8 +126,8 @@ extension InitController {
         
         detailLeft.addSubview(usedTextLabel)
         
-        let detailCenter = UIView()
-        detailCenter.backgroundColor = .black
+        let detailCenter = UIImageView()
+        detailCenter.image = UIImage(named: "separador-vertical")
         detailCenter.configureLayout {l in
             l.isEnabled = true
             l.width = 2
@@ -137,7 +135,6 @@ extension InitController {
         }
         
         let detailRight = UIView()
-        detailRight.backgroundColor = .red
         detailRight.configureLayout {l in
             l.isEnabled = true
             l.flexGrow = 1
@@ -153,6 +150,7 @@ extension InitController {
         
         let availableTextLabel = UILabel()
         availableTextLabel.text = "Disponible"
+        availableTextLabel.font = UIFont(name: "PFBeauSansPro-Regular", size: 14)
         availableTextLabel.textColor = .white
         availableTextLabel.textAlignment = .center
         availableTextLabel.font = UIFont.systemFont(ofSize: 12)
@@ -172,7 +170,7 @@ extension InitController {
     
     private func setupSelector() {
         let selectorView = UIView()
-        selectorView.backgroundColor = .blue
+       
         selectorView.configureLayout {l in
             l.isEnabled = true
             l.height = 55
@@ -198,7 +196,7 @@ extension InitController {
         view.addSubview(selectorView)
         
         let selectorLineView = UIView()
-        selectorLineView.backgroundColor = .gray
+        selectorLineView.backgroundColor = UIColor.defaultTheme.df
         selectorLineView.configureLayout {l in
             l.isEnabled = true
             l.height = 3
@@ -207,7 +205,7 @@ extension InitController {
         let p = self.view.frame.width / 2
         selectorActualLineView.configureLayout { l in
             l.isEnabled = true
-            l.height = 3
+            l.height = 4
             l.width = YGValue(p)
         }
        selectorLineView.addSubview(selectorActualLineView)
