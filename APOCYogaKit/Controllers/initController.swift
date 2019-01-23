@@ -37,14 +37,17 @@ class InitController: UIViewController {
     
     var selectorLastMov: UIButton = {
         let button = UIButton()
+        button.tag = 1000
         button.setTitle("Últimos movimientos", for: .normal)
         button.titleLabel?.textColor = .red
         button.titleLabel?.font = UIFont.systemFont(ofSize: 13)
+    
         return button
     }()
     
     var selectorBillingMov: UIButton = {
         let button = UIButton()
+        button.tag = 1001
         button.setTitle("Movimientos Facturados", for: .normal)
         button.titleLabel?.textColor = .green
         button.titleLabel?.font = UIFont.systemFont(ofSize: 13)
@@ -75,8 +78,20 @@ class InitController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        setupHD()
+    }
+    
+    private func setupHD() {
         collectionView.delegate = self
         collectionView.dataSource = self
+        
+        selectorLastMov.addTarget(self, action: #selector(tapButton), for: .touchUpInside)
+        selectorBillingMov.addTarget(self, action: #selector(tapButton), for: .touchUpInside)
+    }
+    
+    @objc  func tapButton(_ sender: UIButton) {
+        let index = abs(1000 - sender.tag)
+        setMov(index)
     }
 }
 
@@ -111,6 +126,8 @@ extension InitController:UICollectionViewDataSource, UICollectionViewDelegate,  
     
     
     private func setMov(_ index: Int) {
+        let indexPath = IndexPath(item: index, section: 0)
+        collectionView.selectItem(at: indexPath, animated: true, scrollPosition: .centeredHorizontally)
         
         var x = 0
         let w = view.frame.width / 2
